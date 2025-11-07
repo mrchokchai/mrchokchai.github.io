@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chokchai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Inter"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+
+  <header class="p-4 bg-background-light dark:bg-background-dark sticky top-0 z-10 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-background-dark dark:text-background-light">Chokchai</h1>
+  </header>
+
+  <main class="p-6">
+    <section class="mb-12">
+      <h2 class="text-4xl font-black text-background-dark dark:text-background-light mb-4">Create Tomorrow Today</h2>
+      <p class="text-background-dark/80 dark:text-background-light/80 mb-6">
+        With Chokchai Life Insurance, you're not just buying a policy; you're investing in peace of mind for you and your loved ones.
+      </p>
+      <button class="bg-primary text-white font-bold py-3 px-6 rounded-lg">Get a Free Quote</button>
+    </section>
+
+    <section id="contact">
+      <h2 class="text-2xl font-bold mb-4 text-background-dark dark:text-background-light">Contact Us</h2>
+      <form action="https://formspree.io/f/xrbonvne" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Name" required class="form-input w-full rounded-lg p-3 border border-primary/30" />
+        <input type="email" name="email" placeholder="Your Email" required class="form-input w-full rounded-lg p-3 border border-primary/30" />
+        <textarea name="message" rows="5" placeholder="Your Message" required class="form-textarea w-full rounded-lg p-3 border border-primary/30"></textarea>
+        <button type="submit" class="bg-primary text-white font-bold py-2 px-6 rounded-lg">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="p-4 text-center text-sm text-primary/70 dark:text-primary/50">
+    © 2025 Chokchai
+  </footer>
+
+</body>
+</html>
