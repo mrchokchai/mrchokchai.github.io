@@ -4,12 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chokchai Life Insurance</title>
-
-  <!-- Font & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,19 +25,15 @@
     }
   </script>
 </head>
+<body class="font-display bg-secondary text-dark">
 
-<body class="font-display">
-
-<!-- Top Hero (AIA Representative) -->
-<section class="relative bg-cover bg-center h-[80vh]" 
-  style="background-image: url('https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1350&q=80');">
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center h-[85vh]" style="background-image: url('https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1500&q=80');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
   <div class="relative z-10 max-w-4xl mx-auto h-full flex flex-col justify-center items-start px-6 text-white">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">ตัวแทนประกันชีวิต AIA</h2>
-    <p class="text-lg md:text-xl mb-6 max-w-2xl">
-      ผมเป็นตัวแทนประกันชีวิตจากเอไอเอ พร้อมช่วยวางแผนคุ้มครองชีวิตและการเงินอย่างมั่นใจในวันนี้ 
-      เพื่ออนาคตที่มั่นคงของคุณและครอบครัวในวันข้างหน้า
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">ตัวแทนประกันชีวิต AIA</h2>
+    <p class="text-lg md:text-xl mb-6 max-w-2xl drop-shadow-md">
+      ผมพร้อมช่วยดูแลชีวิต การเงิน และอนาคตของคุณด้วยแผนประกันที่เหมาะสมที่สุด
     </p>
     <a href="#contact" class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
       ติดต่อเพื่อขอคำปรึกษา
@@ -48,54 +41,37 @@
   </div>
 </section>
 
-<!-- Middle Hero Grand -->
-<section class="relative bg-primary text-white text-center py-28 px-6 overflow-hidden">
-  
-  <div class="absolute inset-0 bg-gradient-to-br from-primary to-blue-700 opacity-90"></div>
+<!-- Grand Statement Section -->
+<section class="py-20 bg-white text-center">
+  <h2 class="text-4xl md:text-5xl font-extrabold text-primary mb-6 tracking-tight">
+    คุณรู้หรือไม่? อะไรสำคัญที่สุดในชีวิต
+  </h2>
+  <p class="text-xl md:text-2xl text-gray-700 font-semibold max-w-3xl mx-auto leading-relaxed">
+    
+    <span class="text-dark font-black text-4xl md:text-5xl block my-6">“ลมหายใจ”</span>
 
-  <div class="relative z-10 max-w-3xl mx-auto">
-
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-wide leading-tight">
-      คุณรู้หรือไม่ว่า… สิ่งที่สำคัญที่สุดในชีวิตคืออะไร?
-    </h2>
-
-    <div class="w-28 h-1 bg-white/80 mx-auto rounded-full mb-8 shadow-lg"></div>
-
-    <p class="text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">
-      “ลมหายใจ”
-    </p>
-
-    <p class="max-w-2xl mx-auto text-lg md:text-xl opacity-90 leading-relaxed mb-8">
-      เพราะทุกลมหายใจมีคุณค่า  
-      และควรมีแผนคุ้มครองที่ช่วยดูแลคุณและครอบครัวในวันที่ไม่คาดคิด
-    </p>
-
-    <a href="#contact" 
-      class="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition shadow-lg text-lg">
-      ขอคำปรึกษาเพื่อปกป้องลมหายใจของคุณ
-    </a>
-  </div>
+    เพราะตราบใดที่ลมหายใจยังอยู่ เรามีโอกาสสร้างอนาคต ดูแลครอบครัว และปกป้องคนที่รักไว้ได้เสมอ
+  </p>
 </section>
 
-<!-- About -->
+<!-- About Section -->
 <section id="about" class="py-16 bg-gray-50">
   <div class="max-w-5xl mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold text-primary mb-4">เกี่ยวกับผม</h2>
     <p class="text-gray-700 text-lg leading-relaxed">
       สวัสดีครับ ผมชื่อ <strong>โชคชัย เมธาพิพัฒนกุล</strong><br>
-      ตัวแทนประกันชีวิตจาก <strong>AIA</strong><br>
-      พร้อมดูแลและให้คำปรึกษาเรื่องการวางแผนทางการเงิน  
-      และการคุ้มครองชีวิตของคุณและครอบครัวอย่างจริงใจ
+      ตัวแทนประกันชีวิตจาก <strong>AIA</strong> ที่พร้อมดูแลและให้คำปรึกษา<br>
+      เรื่องการวางแผนการเงินและความคุ้มครองชีวิตของคุณอย่างจริงใจ
     </p>
   </div>
 </section>
 
-<!-- Services -->
+<!-- Services Section -->
 <section id="services" class="py-16 bg-white">
   <div class="max-w-6xl mx-auto px-6 text-center">
     <h2 class="text-3xl font-bold text-primary mb-10">บริการของผม</h2>
+
     <div class="grid md:grid-cols-3 gap-8">
-      
       <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
         <h3 class="text-xl font-semibold mb-2 text-primary">ประกันชีวิต</h3>
         <p class="text-gray-600">วางแผนความคุ้มครองชีวิต เพื่อความอุ่นใจของครอบครัว</p>
@@ -103,24 +79,50 @@
 
       <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
         <h3 class="text-xl font-semibold mb-2 text-primary">ประกันสุขภาพ</h3>
-        <p class="text-gray-600">คุ้มครองค่ารักษาพยาบาล เพื่อไม่ให้ภาระทางการเงินมากวนใจ</p>
+        <p class="text-gray-600">คุ้มครองค่ารักษาพยาบาล เพื่อไม่ให้ภาระทางการเงินกวนคุณ</p>
       </div>
 
       <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
         <h3 class="text-xl font-semibold mb-2 text-primary">วางแผนการเงินระยะยาว</h3>
-        <p class="text-gray-600">ให้คำแนะนำเพื่อเป้าหมาย เช่น เกษียณ หรือแผนการศึกษาบุตร</p>
+        <p class="text-gray-600">ตั้งเป้าหมาย ออม ลงทุน และวางแผนเกษียณอย่างเป็นระบบ</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- Testimonials -->
-<section id="testimonials" class="py-16 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-primary mb-10">เสียงจากลูกค้าของผม</h2>
-    <div class="grid md:grid-cols-2 gap-8">
+<!-- Contact Form Section -->
+<section id="contact" class="py-20 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-primary text-center mb-10">ติดต่อผม</h2>
 
-      <div class="bg-white shadow rounded-lg p-6">
-        <p class="text-gray-700 italic">“คุณโชคชัยให้คำปรึกษาอย่างละเอียด เข้าใจง่าย และช่วยเลือกแผนเหมาะกับครอบครัวมากที่สุดครับ”</p>
-        <p class="mt-4 fon
+    <form class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">ชื่อของคุณ</label>
+        <input type="text" class="w-full p-3 border rounded-lg" placeholder="ระบุชื่อ" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">อีเมล</label>
+        <input type="email" class="w-full p-3 border rounded-lg" placeholder="example@email.com" />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-1">ข้อความ</label>
+        <textarea class="w-full p-3 border rounded-lg h-32" placeholder="รายละเอียดหรือคำถามของคุณ"></textarea>
+      </div>
+
+      <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+        ส่งข้อความ
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white text-center p-6 mt-10">
+  <p>&copy; 2025 Chokchai Life Insurance. All rights reserved.</p>
+  <p class="mt-2 text-sm">ตัวแทนประกันชีวิต AIA | โทร 092-446-3519 | LINE: 0924463519</p>
+</footer>
+
+</body>
+</html>
