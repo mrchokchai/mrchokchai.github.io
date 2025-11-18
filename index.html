@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chokchai Life Insurance</title>
+
+  <!-- Font & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -17,162 +19,211 @@
             secondary: '#f4f7fb',
             dark: '#0a2540'
           },
-          fontFamily: {
-            display: ['Inter', 'sans-serif']
-          }
+          fontFamily: { display: ['Inter', 'sans-serif'] }
         }
       }
     }
   </script>
-</head>
-<!-- Hero Section -->
-<section class="relative bg-cover bg-center h-[80vh]" style="background-image: url('https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1350&q=80');">
-  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-  <div class="relative z-10 max-w-4xl mx-auto h-full flex flex-col justify-center items-start px-6 text-white">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">ตัวแทนประกันชีวิต AIA</h2>
-    <p class="text-lg md:text-xl mb-6 max-w-2xl">
-      ผมเป็นตัวแทนประกันชีวิตจากเอไอเอ พร้อมช่วยวางแผนคุ้มครองชีวิตและการเงินอย่างมั่นใจในวันนี้ เพื่ออนาคตที่มั่นคงของคุณและครอบครัวในวันข้างหน้า
-    </p>
-    <a href="#contact" class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">
-      ติดต่อเพื่อขอคำปรึกษา
-    </a>
-  </div>
-</section>
 
+  <style>
+    /* small utilities & animations */
+    .text-drop { text-shadow: 0 6px 18px rgba(0,0,0,0.35); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px);} to { opacity:1; transform:translateY(0);} }
+    .animate-fade-up { animation: fadeUp .6s ease-out; }
+    @keyframes slowBounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);} }
+    .animate-bounce-slow { animation: slowBounce 2.6s infinite; }
+  </style>
+</head>
+<body class="font-display bg-secondary text-dark">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <!-- ถ้าจะวางโลโก้ ให้ใส่ <img src="..." class="h-8" /> แทนข้อความ -->
+        <span class="text-lg font-bold text-primary">Chokchai – ตัวแทนประกันชีวิต AIA</span>
+      </div>
+      <nav class="hidden md:flex gap-6 text-gray-700">
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="#contact" class="hover:text-primary">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-primary text-white text-center py-24 px-6">
-    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">คุณรู้หรือไม่ ! อะไรสำคัญสุดในชีวิต</h2>
-    <p class="max-w-2xl mx-auto text-lg opacity-90 mb-6">" ลมหายใจ "</p>
-    <a href="#contact" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-lg hover:bg-gray-100 transition">Get a Free Quote</a>
+  <!-- Top Hero (Representative) -->
+  <section class="relative bg-cover bg-center h-[70vh]" style="background-image: url('https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=1500&q=80');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 max-w-4xl mx-auto h-full flex flex-col justify-center px-6 text-white animate-fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-3 text-drop">ตัวแทนประกันชีวิต AIA</h1>
+      <p class="max-w-2xl text-lg md:text-xl mb-6">ผมเป็นตัวแทนประกันชีวิตจาก AIA พร้อมช่วยวางแผนคุ้มครองชีวิตและการเงิน ให้คุณและครอบครัวมีความมั่นคงและความอุ่นใจ</p>
+      <a href="#contact" class="inline-block bg-white text-primary font-semibold py-3 px-6 rounded-lg shadow">ขอคำปรึกษา</a>
+    </div>
   </section>
 
- <!-- About Section -->
-<section id="about" class="py-16 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-primary mb-4">เกี่ยวกับผม</h2>
-    <p class="text-gray-700 text-lg leading-relaxed">
-      สวัสดีครับ ผมชื่อ <strong>โชคชัย เมธาพิพัฒนกุล</strong>  
-      ตัวแทนประกันชีวิตจาก <strong>AIA</strong>  
-      ที่พร้อมดูแลและให้คำปรึกษาเรื่องการวางแผนทางการเงิน  
-      และการคุ้มครองชีวิตของคุณและครอบครัวอย่างจริงใจ
-    </p>
-  </div>
-</section>
+  <!-- Grand Quote (แบบ B) -->
+  <section class="relative bg-gradient-to-br from-primary to-blue-700 text-white text-center py-24 px-6 overflow-hidden">
+    <!-- decorative faint circles -->
+    <div aria-hidden="true" class="absolute -right-32 -top-32 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+    <div class="relative z-10 max-w-3xl mx-auto animate-fade-up">
+      <h2 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">คุณรู้หรือไม่… สิ่งที่สำคัญที่สุดในชีวิตคืออะไร?</h2>
 
-<!-- Services Section -->
-<section id="services" class="py-16 bg-white">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-primary mb-10">บริการของผม</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
-        <h3 class="text-xl font-semibold mb-2 text-primary">ประกันชีวิต</h3>
-        <p class="text-gray-600">วางแผนความคุ้มครองชีวิต เพื่อความอุ่นใจของครอบครัว</p>
-      </div>
-      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
-        <h3 class="text-xl font-semibold mb-2 text-primary">ประกันสุขภาพ</h3>
-        <p class="text-gray-600">คุ้มครองค่ารักษาพยาบาล เพื่อไม่ให้ภาระทางการเงินมารบกวนชีวิต</p>
-      </div>
-      <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
-        <h3 class="text-xl font-semibold mb-2 text-primary">วางแผนการเงินระยะยาว</h3>
-        <p class="text-gray-600">ให้คำแนะนำเพื่อเป้าหมายทางการเงิน เช่น เกษียณ หรือการศึกษา</p>
+      <!-- glow divider -->
+      <div class="w-28 h-1 bg-white/90 mx-auto rounded-full mb-6 shadow-[0_6px_25px_rgba(255,255,255,0.12)]"></div>
+
+      <p class="text-3xl md:text-4xl font-black mb-4 drop-shadow-lg">“ลมหายใจ”</p>
+
+      <p class="max-w-2xl mx-auto text-lg md:text-xl opacity-95 leading-relaxed mb-8">
+        เพราะตราบใดที่ลมหายใจยังอยู่ เรายังมีเวลาให้คนที่รัก วางแผนอนาคต และปกป้องสิ่งที่สำคัญที่สุด
+      </p>
+
+      <a href="#contact" class="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg shadow-lg">ขอคำปรึกษาเพื่อปกป้องลมหายใจของคุณ</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-primary mb-4">เกี่ยวกับผม</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        สวัสดีครับ ผม <strong>โชคชัย เมธาพิพัฒนกุล</strong> ตัวแทนประกันชีวิตจาก <strong>AIA</strong><br>
+        ให้คำปรึกษาด้านการวางแผนการเงินและการคุ้มครองชีวิต ด้วยความจริงใจและเข้าใจลูกค้าเป็นรายบุคคล
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-primary mb-10">บริการของผม</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-primary mb-2">ประกันชีวิต</h4>
+          <p class="text-gray-600">วางแผนความคุ้มครองเพื่ออนาคตของครอบครัว</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-primary mb-2">ประกันสุขภาพ</h4>
+          <p class="text-gray-600">คุ้มครองค่ารักษาพยาบาล ไม่ให้เป็นภาระทางการเงิน</p>
+        </div>
+        <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-md transition">
+          <h4 class="text-xl font-semibold text-primary mb-2">วางแผนการเงิน</h4>
+          <p class="text-gray-600">วางแผนเพื่อเป้าหมายระยะยาว เช่น เกษียณ หรือการศึกษา</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="py-16 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-primary mb-10">เสียงจากลูกค้าของผม</h2>
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="bg-white shadow rounded-lg p-6">
-        <p class="text-gray-700 italic">
-          “คุณโชคชัยให้คำปรึกษาอย่างละเอียด เข้าใจง่าย และช่วยผมเลือกแผนที่เหมาะสมกับครอบครัวมากที่สุดครับ”
-        </p>
-        <p class="mt-4 font-semibold text-primary">— คุณณัฐวุฒิ พ.</p>
-      </div>
-      <div class="bg-white shadow rounded-lg p-6">
-        <p class="text-gray-700 italic">
-          “รู้สึกอุ่นใจที่มีตัวแทนที่ไว้ใจได้ ดูแลและตอบคำถามอย่างมืออาชีพมากค่ะ”
-        </p>
-        <p class="mt-4 font-semibold text-primary">— คุณสุภาวดี ร.</p>
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-primary mb-10">เสียงจากลูกค้าของผม</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white shadow rounded-lg p-6">
+          <p class="text-gray-700 italic">“คุณโชคชัยให้คำปรึกษาอย่างละเอียด เข้าใจง่าย และช่วยเลือกแผนที่เหมาะสมกับครอบครัวมากที่สุดครับ”</p>
+          <p class="mt-4 font-semibold text-primary">— คุณณัฐวุฒิ พ.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6">
+          <p class="text-gray-700 italic">“รู้สึกอุ่นใจที่มีตัวแทนที่ไว้ใจได้ ดูแลและตอบคำถามอย่างมืออาชีพมากค่ะ”</p>
+          <p class="mt-4 font-semibold text-primary">— คุณสุภาวดี ร.</p>
+        </div>
       </div>
     </div>
+  </section>
+
+  <!-- Contact (Formspree via fetch) -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-primary text-center mb-6">ติดต่อผม</h3>
+      <p class="text-gray-600 text-center mb-8">ต้องการคำปรึกษาหรือสอบถามข้อมูลเพิ่มเติม ฝากข้อความไว้ได้เลย ผมจะติดต่อกลับโดยเร็วที่สุด</p>
+
+      <form id="contact-form" class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+        <input type="hidden" name="_subject" value="New contact from website">
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">ชื่อของคุณ</label>
+          <input name="name" type="text" required class="mt-1 w-full border border-gray-300 rounded-lg p-3" placeholder="ชื่อ-นามสกุล">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">อีเมล</label>
+          <input name="email" type="email" required class="mt-1 w-full border border-gray-300 rounded-lg p-3" placeholder="you@example.com">
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700">ข้อความ</label>
+          <textarea name="message" rows="5" required class="mt-1 w-full border border-gray-300 rounded-lg p-3" placeholder="รายละเอียดหรือคำถามของคุณ"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-primary hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition">ส่งข้อความ</button>
+
+        <p id="contact-status" class="text-center text-sm mt-2"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-6">
+    <p>&copy; 2025 Chokchai Life Insurance. All rights reserved.</p>
+    <p class="mt-2 text-sm">ตัวแทนประกันชีวิต AIA | โทร <a href="tel:0924463519" class="underline">092-446-3519</a> | LINE: <a href="https://line.me/ti/p/~0924463519" class="underline" target="_blank">@0924463519</a></p>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="fixed bottom-6 right-6 flex flex-col space-y-3 z-50 animate-fade-up">
+    <a href="https://line.me/ti/p/~0924463519" target="_blank" title="แชทผ่าน LINE"
+       class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition transform hover:scale-110 animate-bounce-slow">
+      <!-- ใช้ emoji หรือแทนด้วย <img> ได้ -->
+      💬
+    </a>
+
+    <a href="tel:0924463519" title="โทรติดต่อ"
+       class="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition transform hover:scale-110 animate-bounce-slow">
+      📞
+    </a>
   </div>
-</section>
-<!-- Contact Section -->
-<section id="contact" class="py-16 bg-white">
-  <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-bold text-primary mb-6">ติดต่อผม</h2>
-    <p class="text-gray-600 mb-8">
-      ต้องการคำปรึกษาเกี่ยวกับประกันชีวิตหรือวางแผนการเงิน?  
-      ฝากข้อความไว้ได้เลยครับ ผมจะติดต่อกลับโดยเร็วที่สุด
-    </p>
 
-    <form action="https://formspree.io/f/xrbonvne" method="POST" class="space-y-6 text-left">
-      <div>
-        <label for="name" class="block text-sm font-medium text-gray-700">ชื่อของคุณ</label>
-        <input type="text" id="name" name="name" required
-          class="mt-1 w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:outline-none" />
-      </div>
+  <!-- Scripts -->
+  <script>
+    // Formspree endpoint ของคุณ
+    const FORM_ENDPOINT = "https://formspree.io/f/xrbonvne";
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("contact-status");
 
-      <div>
-        <label for="email" class="block text-sm font-medium text-gray-700">อีเมล</label>
-        <input type="email" id="email" name="email" required
-          class="mt-1 w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:outline-none" />
-      </div>
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      status.textContent = "กำลังส่ง...";
+      status.className = "text-center text-sm mt-2 text-gray-600";
 
-      <div>
-        <label for="message" class="block text-sm font-medium text-gray-700">ข้อความ</label>
-        <textarea id="message" name="message" rows="4" required
-          class="mt-1 w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:outline-none"></textarea>
-      </div>
+      const data = new FormData(form);
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          body: data,
+          headers: { "Accept": "application/json" }
+        });
 
-      <button type="submit"
-        class="w-full bg-primary hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition">
-        ส่งข้อความ
-      </button>
-    </form>
-  </div>
-</section>
+        if (res.ok) {
+          status.textContent = "✅ ส่งข้อความเรียบร้อยแล้ว! ผมจะติดต่อกลับโดยเร็วที่สุด";
+          status.className = "text-center text-sm mt-2 text-green-600";
+          form.reset();
+        } else {
+          const json = await res.json().catch(()=>null);
+          status.textContent = "❌ เกิดข้อผิดพลาด: " + (json && json.error ? json.error : "กรุณาลองใหม่อีกครั้ง");
+          status.className = "text-center text-sm mt-2 text-red-600";
+        }
+      } catch (err) {
+        status.textContent = "⚠️ เกิดปัญหาเครือข่าย โปรดลองอีกครั้ง";
+        status.className = "text-center text-sm mt-2 text-red-600";
+      }
+    });
+  </script>
 
-<!-- Footer -->
-<footer class="bg-gray-800 text-white text-center p-6">
-  <p>&copy; 2025 Chokchai Life Insurance. All rights reserved.</p>
-  <p class="mt-2 text-sm">ตัวแทนประกันชีวิต AIA | โทร 092-446-3519 | LINE: 0924463519</p>
-</footer>
-<!-- Floating Contact Buttons with Animation -->
-<div class="fixed bottom-6 right-6 flex flex-col space-y-3 animate-fade-in">
-  <a href="https://line.me/ti/p/~0924463519" target="_blank" 
-     class="bg-green-500 hover:bg-green-600 text-white rounded-full p-4 shadow-lg transition transform hover:scale-110 animate-bounce-slow"
-     title="แชทผ่าน LINE">
-    💬
-  </a>
-  <a href="tel:0924463519"
-     class="bg-blue-500 hover:bg-blue-600 text-white rounded-full p-4 shadow-lg transition transform hover:scale-110 animate-bounce-slow"
-     title="โทรติดต่อ">
-    📞
-  </a>
-</div>
+  <!-- Inline animation styles (again to ensure present) -->
+  <style>
+    @keyframes fadeUp { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:translateY(0);} }
+    .animate-fade-up { animation: fadeUp .6s ease-out; }
+    @keyframes slowBounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(-6px);} }
+    .animate-bounce-slow { animation: slowBounce 2.6s infinite; }
+  </style>
 
-<!-- Animation Styles -->
-<style>
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .animate-fade-in {
-    animation: fadeIn 0.8s ease-out;
-  }
-
-  @keyframes bounceSlow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-4px); }
-  }
-  .animate-bounce-slow {
-    animation: bounceSlow 2.5s infinite;
-  }
-</style>
+</body>
 </html>
